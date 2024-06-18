@@ -2,7 +2,7 @@
   hosts: all 
   tasks:
     - name: installing utilitis on ubuntu
-      ansible.builtin.packages:
+      ansible.builtin.package:
         name: "{{item}}"
         state: present
       become: yes
