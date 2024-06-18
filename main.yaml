@@ -1,0 +1,12 @@
+- name: installing utilities on ubuntu
+  hosts: all 
+  tasks:
+    - name: installing utilitis on ubuntu
+      ansible.builtin.packages:
+        name: "{{item}}"
+        state: present
+      become: yes
+      loop: "{{packages}}"
+    - name: debug variables
+      ansible.builtin.debug:
+        var: purpose      
