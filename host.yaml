@@ -1,6 +1,6 @@
 all: 
   children:
-    local:
+    local1:
       hosts:
         localhost:
         
