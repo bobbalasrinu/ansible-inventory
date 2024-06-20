@@ -1,0 +1,8 @@
+- name: ninja2 template demo 
+  hosts: all
+  become: yes
+  tasks:
+    - name: ninja2
+      ansible.builtin.template:
+        src: info.txt.j2
+        dest: /tmp/info.txt
